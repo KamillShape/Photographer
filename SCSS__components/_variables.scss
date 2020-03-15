@@ -1,0 +1,54 @@
+$colorBlack1: rgb(30, 30, 30);
+$colorBlack2: rgb(45, 45, 45);
+$colorWhite1: rgb(227, 227, 227);
+$colorWhite2: rgb(242, 252, 242);
+$fontsizeMobile: 14px;
+$fontFamily: 'Roboto Mono',
+monospace;
+
+@mixin h2Set {
+    width: 90%;
+    text-align: center;
+    border-bottom: 3px solid $colorBlack2;
+    margin: 3% auto;
+    font-size: (2*$fontsizeMobile);
+}
+
+@mixin barStyle {
+    width: 100%;
+    height: 6px;
+    background-color: $colorBlack1;
+    display: block;
+    content: "";
+}
+
+@mixin setStyle {
+    opacity: 0;
+    transition: 1s ease-out;
+    width: 100%;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $fontFamily;
+    overflow-x: hidden;
+    max-width: 1600px;
+    margin: 0 auto;
+
+}
+
+.titleh2 {
+    @include h2Set
+}
+
+.social-media {
+    margin: 0 auto;
+    text-align: center;
+    font-size: $fontsizeMobile*2;
+    padding: 10px;
+}

@@ -1,0 +1,390 @@
+@media (min-width: 640px) {
+    .about {
+        &__container {
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        &__photo {
+            flex-basis: 50%;
+            height: 350px;
+        }
+
+        &__container_2 {
+            flex-basis: 50%;
+            height: 100%;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            height: 350px;
+        }
+
+        &__description {
+            font-size: $fontsizeMobile;
+        }
+
+
+
+    }
+
+    .gallery {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contact {
+        width: 70%;
+    }
+}
+
+@media (min-width: 800px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__hamburger {
+            display: none;
+        }
+
+        &__logo {
+            height: 100%;
+        }
+
+        &__logo img {
+            height: 80px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            position: static;
+            width: 60%;
+            height: 100%;
+            background-color: transparent;
+            margin: auto 0;
+        }
+
+        &__list-item-link {
+            font-size: $fontsizeMobile*1.2;
+            color: $colorBlack1;
+            width: 100px;
+
+
+
+            &:hover {
+                background-color: transparent;
+                color: $colorBlack1;
+                border-bottom: 5px solid $colorBlack1;
+            }
+        }
+
+    }
+
+    .slider {
+        height: 80vh;
+
+        &__title1 {
+            font-size: (1.8 * $fontsizeMobile);
+        }
+
+        &__title2 {
+            font-size: (2.3 * $fontsizeMobile);
+        }
+    }
+
+    &__container {
+        width: 75%;
+    }
+
+    .titleh2 {
+        font-size: 2.2*$fontsizeMobile;
+    }
+
+
+
+    .about {
+
+        &__photo {
+            height: 500px;
+        }
+
+
+        &__welcome {
+            font-size: 36px;
+
+        }
+
+        &__description {
+            font-size: $fontsizeMobile * 1.2;
+        }
+
+        &__social-media {
+            font-size: 30px;
+        }
+    }
+
+    .social-media {
+        font-size: 3*$fontsizeMobile;
+    }
+
+    .gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 90%;
+        margin: 0 auto;
+
+        &__set:nth-of-type(even),
+        &__set:nth-of-type(odd) {
+            width: 50%;
+        }
+
+    }
+
+    .contact {
+        width: 80%;
+
+        &__form {
+            width: 90%;
+        }
+
+        &__input,
+        &__button {
+            font-size: $fontsizeMobile *1.1
+        }
+
+        &__info {
+            font-size: $fontsizeMobile *1.1
+        }
+    }
+
+    .footer {
+        font-size: $fontsizeMobile *1.1
+    }
+}
+
+@media (min-width: 1024px) {
+    .menu {
+
+        // &__logo img {
+        //     height: 90px;
+        // }
+
+        &__list-item-link {
+            width: 120px;
+            font-size: $fontsizeMobile*1.4;
+        }
+    }
+
+    .slider {
+
+        height: 80vh;
+
+        &__title1 {
+            font-size: (2 * $fontsizeMobile);
+        }
+
+        &__title2 {
+            font-size: (2.5 * $fontsizeMobile);
+        }
+
+    }
+
+    .titleh2 {
+        font-size: 2.4*$fontsizeMobile;
+    }
+
+    .about {
+        &__container {
+            width: 70%;
+        }
+
+        &__photo {
+            width: 350px;
+            height: 500px;
+        }
+
+        &__welcome {
+            font-size: 2.5*$fontsizeMobile;
+        }
+
+        &__description {
+            font-size: 1.5*$fontsizeMobile;
+        }
+    }
+
+    .gallery {
+        width: 80%
+    }
+
+    .contact {
+        width: 75%;
+
+        &__form {
+            width: 80%;
+        }
+
+        &__input,
+        &__button {
+            font-size: $fontsizeMobile *1.2
+        }
+
+        &__info {
+            font-size: $fontsizeMobile *1.2
+        }
+    }
+
+    .footer {
+        font-size: $fontsizeMobile *1.2
+    }
+}
+
+@media (min-width: 1300px) {
+    .menu {
+        &__list-item-link {
+            width: 140px;
+            font-size: $fontsizeMobile*1.6;
+        }
+
+    }
+
+    .gallery {
+        width: 70%
+    }
+
+    .slider {
+        height: 90vh;
+
+        &__title1 {
+            font-size: (2.3 * $fontsizeMobile);
+        }
+
+        &__title2 {
+            font-size: (2.7 * $fontsizeMobile);
+        }
+
+    }
+
+    .titleh2 {
+        font-size: 2.6*$fontsizeMobile;
+    }
+
+    .about {
+        &__container {
+            width: 70%;
+            height: 600px;
+        }
+
+        &__photo {
+            width: 300px;
+            height: 600px;
+        }
+
+        &__welcome {
+            font-size: 3*$fontsizeMobile;
+        }
+
+        &__description {
+            font-size: 1.8*$fontsizeMobile;
+        }
+    }
+
+
+    .contact {
+        width: 75%;
+
+        &__form {
+            width: 80%;
+        }
+
+        &__input,
+        &__button {
+            font-size: $fontsizeMobile *1.3
+        }
+
+        &__info {
+            font-size: $fontsizeMobile *1.3
+        }
+    }
+
+    .footer {
+        font-size: $fontsizeMobile *1.3
+    }
+
+}
+
+@media (min-width: 1500px) {
+    .menu {
+        // &__logo img {
+        //     height: 110px;
+        // }
+    }
+
+    .slider {
+        height: 90vh;
+
+        &__title1 {
+            font-size: (2.5 * $fontsizeMobile);
+        }
+
+        &__title2 {
+            font-size: (2.9 * $fontsizeMobile);
+        }
+
+    }
+
+    .about {
+        &__container {
+            width: 70%;
+            height: 700px;
+        }
+
+        &__photo {
+            width: 400px;
+            height: 650px;
+        }
+    }
+
+    .titleh2 {
+        font-size: 2.8*$fontsizeMobile;
+    }
+
+    .gallery {
+        width: 70%
+    }
+
+    &__welcome {
+        font-size: 3.5*$fontsizeMobile;
+    }
+
+    &__description {
+        font-size: 1.8*$fontsizeMobile;
+    }
+
+    .contact {
+        width: 75%;
+
+        &__form {
+            width: 80%;
+        }
+
+        &__input,
+        &__button {
+            font-size: $fontsizeMobile *1.4
+        }
+
+        &__info {
+            font-size: $fontsizeMobile *1.4
+        }
+    }
+
+    .footer {
+        font-size: $fontsizeMobile *1.4
+    }
+
+}
